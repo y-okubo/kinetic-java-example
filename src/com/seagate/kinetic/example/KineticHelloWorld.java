@@ -100,12 +100,12 @@ public class KineticHelloWorld {
         // Put entry ignore version
         client.putForced(entry);
         System.out.printf("put key=\"%s\" value=\"%s\"\n",
-                new String(key), new String(value));
+        new String(key), new String(value));
 
         // Get key
         Entry entryGet = client.get(key);
         System.out.printf("get key=\"%s\" retrieved value=\"%s\"\n",
-                new String(key), new String(entryGet.getValue()));
+        new String(key), new String(entryGet.getValue()));
 
         // Delete entry
         client.delete(entry);
