@@ -62,7 +62,6 @@ import kinetic.client.Entry;
 import kinetic.client.KineticClient;
 import kinetic.client.KineticClientFactory;
 import kinetic.client.KineticException;
-import kinetic.simulator.KineticSimulator;
 import kinetic.simulator.SimulatorConfiguration;
 
 /**
@@ -88,8 +87,6 @@ public class KineticHelloWorld {
 
         // Use memory store.
         simulatorConf.setUseMemoryStore(true);
-
-        KineticSimulator simulator = new KineticSimulator(simulatorConf);
 
         // Client configuration and initialization
         ClientConfiguration clientConfig = new ClientConfiguration();
@@ -117,6 +114,5 @@ public class KineticHelloWorld {
 
         // Close client and simulator
         client.close();
-        simulator.close();
     }
 }
